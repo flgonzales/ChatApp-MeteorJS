@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Chatbox from './Chatbox.js';
+import MessageInput from '.MessageInput.js';
 
 // App component - represents the whole App
 export default class App extends Component {
@@ -25,6 +26,7 @@ export default class App extends Component {
         <p>
           {this.renderChatbox ()}
         </p>
-    ),
+      </div>
+    );
   }
 }
