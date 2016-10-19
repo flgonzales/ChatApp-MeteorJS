@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import Chatbox from './Chatbox.js';
-import MessageInput from '.MessageInput.js';
+import Chatbox from './Chatbox.jsx';
+import MessageInput from './MessageInput.jsx';
 
 // App component - represents the whole App
 export default class App extends Component {
