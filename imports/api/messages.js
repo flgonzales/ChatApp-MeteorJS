@@ -30,7 +30,7 @@ Meteor.methods({
       text,
       createdAt: new Date(),
       owner: this.userId,
-      
-    })
-  }
-})
+      username:Meteor.users.findOne(this.userId).username,
+    });
+  },
+});
