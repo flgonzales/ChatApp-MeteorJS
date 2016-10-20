@@ -1,9 +1,9 @@
 import React, { Component, PropTypes } from 'react';
 
-// import MessageInput from './MessageInput.jsx';
+/* import MessageInput from './MessageInput.jsx';
 
 // Chatbox component - represents the sum of all Messages
-// export default class Chatbox extends Component {
+//* export default class Chatbox extends Component {
 //   render() {
 //     return (
 //       <div>
@@ -13,7 +13,7 @@ import React, { Component, PropTypes } from 'react';
 //   }
 // }
 
-// Test
+// Test */
 export default class Chatbox extends Component {
   render() {
     return (
