@@ -1,27 +1,25 @@
 import React, { Component, PropTypes } from 'react';
 
-/* import MessageInput from './MessageInput.jsx';
+import {Messages} from '../api/messages.js';
 
-// Chatbox component - represents the sum of all Messages
-//* export default class Chatbox extends Component {
-//   render() {
-//     return (
-//       <div>
-//         <li>{this.props.message.text}</li>
-//       </div>
-//     );
-//   }
-// }
+ import MessageInput from './MessageInput.jsx';
 
-// Test */
-export default class Chatbox extends Component {
+ // Chatbox component - represents the sum of all Messages
+ export default class Chatbox extends Component {
+
   render() {
-    return (
-      <li> {this.props.chatbox.text}</li>
-    );
+    // Give a different className after been read so it can be styled easily in CSS
+    const taskClassName = this.prop.task.checked ? 'checked' : '';
 
+    return (
+      <div>
+        <span className="text">{this.props.message.text}</span>
+      </div>
+    );
   }
 }
+
+
 
 Chatbox.propTypes = {
   chatbox: PropTypes.object.isRequired,
