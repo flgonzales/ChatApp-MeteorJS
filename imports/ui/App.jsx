@@ -5,6 +5,7 @@ import {createContainer} from 'meteor/react-meteor-data';
 import {Messages} from '../api/messages.js';
 import Chatbox from './Chatbox.jsx';
 import MessageInput from './MessageInput.jsx';
+import AccountsUIWrapper from './AccountsUIWrapper.jsx';
 
 // App component - represents the whole App
 class App extends Component {
@@ -32,6 +33,7 @@ render() {
     <div className="container">
       <header>
         <h1>ChatApp</h1>
+        <AccountsUIWrapper />
       </header>
 
       <ul>
