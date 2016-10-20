@@ -13,7 +13,8 @@ import {Messages} from '../api/messages.js';
 
     return (
       <div>
-        <span className="text">{this.props.message.text}</span>
+        <span className="text">
+          <strong>{this.props.message.username}</strong>: {this.props.message.text}</span>
       </div>
     );
   }
