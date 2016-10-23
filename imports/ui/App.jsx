@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import { Meteor } from 'meteor/meteor';
 import {createContainer} from 'meteor/react-meteor-data';
 
+import Header from './header';
 import {Messages} from '../api/messages.js';
 import Chatbox from './Chatbox.jsx';
 import MessageInput from './MessageInput.jsx';
@@ -53,7 +54,7 @@ render() {
             />
         </form> : ''
       }
-      
+    
     </div>
   );
 }
